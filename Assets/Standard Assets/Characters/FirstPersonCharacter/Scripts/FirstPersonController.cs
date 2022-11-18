@@ -42,7 +42,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-
+        private bool isDead1;
+        private bool isPaused1;
         // Use this for initialization
         private void Start()
         {
@@ -56,13 +57,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            isDead1 = false;
+            isPaused1 = false;
         }
 
 
         // Update is called once per frame
         private void Update()
         {
-            RotateView();
+            
+            if (isDead1 == false && isPaused1 == false)
+            {
+                RotateView();
+            }
+            
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
@@ -82,6 +90,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+            if (Input.GetButtonDown("Cancel"))
+            {
+                isPaused1 = !isPaused1;
+                
+            }
         }
 
 
@@ -131,7 +145,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
 
-            m_MouseLook.UpdateCursorLock();
+            //m_MouseLook.UpdateCursorLock();
         }
 
 
@@ -237,7 +251,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            
+            m_MouseLook.LookRotation(transform, m_Camera.transform);
+          
         }
 
 
@@ -255,6 +271,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+        private void OnTriggerEnter()
+        {
+            isDead1 = true;
+        }
+        public void Resume()
+        {
+            isPaused1 = !isPaused1;
         }
     }
 }
