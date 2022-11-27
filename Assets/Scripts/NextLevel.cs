@@ -12,10 +12,20 @@ public class NextLevel : MonoBehaviour
     public void Update()
     {
        RaycastHit hit;
-       Ray PlatformRay = new Ray(transform.position, Vector3.up);
-       if(Physics.Raycast(PlatformRay, out hit, skinWidth))
+       if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (hit.collider.gameObject.name == "final" && SceneManager.GetActiveScene().name != "Level_2")
+            {
+                SceneManager.LoadScene("win");
+            }
+            else if(hit.collider.gameObject.name == "final" && SceneManager.GetActiveScene().name == "Level_2")
+            {
+                SceneManager.LoadScene("GameEnd");
+            }
+            else
+            {
+                return;
+            }
         }
     }
     

@@ -21,7 +21,7 @@ public class BallScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if(other.gameObject.name != "Spawner")
+        if(other.gameObject.tag != "Spawner")
         {
             Destroy(this.gameObject);
             Debug.Log("hit");

@@ -8,6 +8,7 @@ public class DiedScript : MonoBehaviour
     public GameObject diedScreen;
     public GameObject gun;
     private bool isDead;
+    private string name1;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,5 +48,9 @@ public class DiedScript : MonoBehaviour
         
 
     }
-
+    public void ReloadLevel()
+    {
+        name1 = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(name1);
+    }
 }
