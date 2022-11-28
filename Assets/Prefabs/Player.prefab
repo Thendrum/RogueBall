@@ -464,6 +464,9 @@ MonoBehaviour:
   finalPlatform: {fileID: 0}
   skinWidth: 2
   Win: 0
+  spawnerPresent: 0
+  spawners: []
+  red: {fileID: 2100000, guid: 54d1d190a5efa144091e20fbadcecec3, type: 2}
 --- !u!1 &2778411184071952743
 GameObject:
   m_ObjectHideFlags: 0
