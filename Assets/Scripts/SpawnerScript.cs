@@ -24,7 +24,8 @@ public class SpawnerScript : MonoBehaviour
         {
             yield return new WaitForSeconds(.5f);
             Vector3 spawnPos = this.transform.position;
-            Instantiate(ball, spawnPos, Quaternion.identity);
+            Instantiate(ball, spawnPos, this.transform.rotation);
+            
         }
     }
 }

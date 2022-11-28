@@ -6,10 +6,12 @@ public class BallScript : MonoBehaviour
 {
     public Rigidbody rb;
     public float thrust = 500f;
-    
+    public GameObject spawner;
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         rb.AddForce(transform.forward * thrust);
     }
 
