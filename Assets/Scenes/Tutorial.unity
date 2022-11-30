@@ -2211,7 +2211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &681289405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3582,8 +3582,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DiedScript, Assembly-CSharp
+      - m_Target: {fileID: 176742009}
+        m_TargetAssemblyTypeName: PauseMenu1, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
@@ -3943,7 +3943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1377028462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4002,8 +4002,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1010, y: -571.6793}
+  m_AnchoredPosition: {x: 5.237976, y: 82.36401}
+  m_SizeDelta: {x: -1020.476, y: -406.952}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1470108479
 GameObject:
