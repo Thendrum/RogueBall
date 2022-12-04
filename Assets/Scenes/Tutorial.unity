@@ -292,8 +292,6 @@ GameObject:
   - component: {fileID: 176742009}
   - component: {fileID: 176742008}
   - component: {fileID: 176742007}
-  - component: {fileID: 176742014}
-  - component: {fileID: 176742015}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -437,35 +435,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &176742014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176742006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34bc4223389450e48809499fffb6503d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LavaUI: {fileID: 0}
-  skinWidth: 0
-  JumpTutorial: {fileID: 607808336}
---- !u!114 &176742015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176742006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c328b7298cd149c4d91cbeb810f05598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunTutorial: {fileID: 200852918}
-  skinWidth: 1
 --- !u!1 &196559262
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +607,134 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &230487787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230487789}
+  - component: {fileID: 230487788}
+  m_Layer: 0
+  m_Name: ClickNoise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &230487788
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230487787}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: dfeab1bf3f704db47bf44c64a39ab01d, type: 2}
+  m_audioClip: {fileID: 8300000, guid: be812330737fbca43a0ea2119f64fb1a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.353
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &230487789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230487787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.47959, y: 23.819006, z: 2.6932669}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257378749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,7 +2334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34bc4223389450e48809499fffb6503d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LavaTut: {fileID: 0}
   LavaUI: {fileID: 0}
+  GunTut: {fileID: 0}
+  GunTutorial: {fileID: 0}
   skinWidth: 0
   JumpTutorial: {fileID: 607808336}
 --- !u!1 &667310371
@@ -3742,6 +3842,18 @@ MonoBehaviour:
           m_StringArgument: Main Menu
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 230487788}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1191205993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3893,6 +4005,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 230487788}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4613,9 +4737,8 @@ GameObject:
   - component: {fileID: 1671389492}
   - component: {fileID: 1671389491}
   - component: {fileID: 1671389490}
-  - component: {fileID: 1671389494}
   m_Layer: 0
-  m_Name: Cube (13)
+  m_Name: GunTut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4699,20 +4822,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671389488}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1671389494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671389488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c328b7298cd149c4d91cbeb810f05598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunTutorial: {fileID: 200852918}
-  skinWidth: 4
 --- !u!1 &1687401712
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,7 +4925,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2778411184777069386, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
   m_PrefabInstance: {fileID: 770861035}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2139912829}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5e19740ea4785e4abef027a81de3c8a, type: 3}
@@ -4827,7 +4936,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2778411184065920133, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
   m_PrefabInstance: {fileID: 770861035}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2139912829}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
@@ -5138,9 +5247,8 @@ GameObject:
   - component: {fileID: 1799814277}
   - component: {fileID: 1799814276}
   - component: {fileID: 1799814275}
-  - component: {fileID: 1799814278}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: LavaTut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5224,21 +5332,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799814273}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1799814278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799814273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34bc4223389450e48809499fffb6503d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LavaUI: {fileID: 448371038}
-  skinWidth: 4
-  JumpTutorial: {fileID: 0}
 --- !u!1 &1944677043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5685,3 +5778,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106511048}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2139912829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2778411184071952741, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
+  m_PrefabInstance: {fileID: 770861035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2139912830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139912829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bc4223389450e48809499fffb6503d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LavaTut: {fileID: 1799814273}
+  LavaUI: {fileID: 448371038}
+  GunTut: {fileID: 1671389488}
+  GunTutorial: {fileID: 200852918}
+  skinWidth: 1
+  JumpTutorial: {fileID: 607808336}

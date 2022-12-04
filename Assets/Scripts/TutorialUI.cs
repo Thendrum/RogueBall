@@ -6,29 +6,40 @@ using JetBrains.Annotations;
 
 public class TutorialUI : MonoBehaviour
 {
+    public GameObject LavaTut;
     public GameObject LavaUI;
+    public GameObject GunTut;
+    public GameObject GunTutorial;
     public float skinWidth;
     public GameObject JumpTutorial;
     void Update()
     {
-        
-        if (Input.GetButtonDown("Jump"))
-        {
-            JumpTutorial.SetActive(false);
-        }
-        
-        //Probably better to cast the ray from the player but this is the way I did it
-        //Ray casts upwards from the object 
+        //fixed?
         RaycastHit hit;
-        Ray Platform = new Ray(transform.position, Vector3.up);
-        if (Physics.Raycast(Platform, out hit, skinWidth))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit))
         {
-            LavaUI.SetActive(true);
-        }
+            if (hit.collider.gameObject.name == "LavaTut")
+            {
+                LavaUI.SetActive(true);
+            }
+        else if (hit.collider.gameObject.name == "GunTut")
+            {
+                GunTutorial.SetActive(true);
+            }
+        }       
+
 
         if (Input.GetButtonDown("Jump"))
         {
             LavaUI.SetActive(false);
+        }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GunTutorial.SetActive(false);
+        }
+        if (Input.GetButtonDown("Jump"))
+        {
+            JumpTutorial.SetActive(false);
         }
     }
 
