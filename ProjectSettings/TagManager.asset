@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Fire
   - Spawner
-  - music
   layers:
   - Default
   - TransparentFX
