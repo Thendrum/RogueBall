@@ -6,9 +6,8 @@ using JetBrains.Annotations;
 
 public class TutorialUI : MonoBehaviour
 {
-    public GameObject LavaTut;
+    
     public GameObject LavaUI;
-    public GameObject GunTut;
     public GameObject GunTutorial;
     public float skinWidth;
     public GameObject JumpTutorial;

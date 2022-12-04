@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2339,10 +2339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34bc4223389450e48809499fffb6503d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LavaTut: {fileID: 0}
-  LavaUI: {fileID: 0}
-  GunTut: {fileID: 0}
-  GunTutorial: {fileID: 0}
+  LavaUI: {fileID: 448371038}
+  GunTutorial: {fileID: 200852918}
   skinWidth: 0
   JumpTutorial: {fileID: 607808336}
 --- !u!1 &667310371
@@ -2529,6 +2527,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307401099622295033, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
+      propertyPath: m_RendererIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2778411184071857477, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2585,6 +2587,10 @@ PrefabInstance:
       propertyPath: diedScreen
       value: 
       objectReference: {fileID: 681289404}
+    - target: {fileID: 2778411184777069387, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
+      propertyPath: yellow
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f8c51bbebaefc648aa60665fbfaabbd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05f0f04c463d01e4e86521d300423688, type: 3}
 --- !u!1 &790888779
@@ -3279,6 +3285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919117172}
   - component: {fileID: 919117171}
+  - component: {fileID: 919117173}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3363,6 +3370,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &919117173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919117170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &949943098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4615,7 +4642,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637426845}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5800,9 +5827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34bc4223389450e48809499fffb6503d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LavaTut: {fileID: 1799814273}
   LavaUI: {fileID: 448371038}
-  GunTut: {fileID: 1671389488}
   GunTutorial: {fileID: 200852918}
   skinWidth: 1
   JumpTutorial: {fileID: 607808336}
