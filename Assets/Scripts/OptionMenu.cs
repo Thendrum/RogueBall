@@ -8,6 +8,7 @@ public class OptionMenu : MonoBehaviour
 {
     
     public AudioMixer AudioMixer;
+    public AudioMixer MusicMixer;
     public void VolumeControl(float volume)
     {
         AudioMixer.SetFloat("MasterVolume", volume);
@@ -22,4 +23,10 @@ public class OptionMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+
+    public void MusicControl(float volume)
+    {
+        AudioMixer.SetFloat("Music", volume);
+    }
 }
+
