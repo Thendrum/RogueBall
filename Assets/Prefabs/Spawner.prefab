@@ -224,3 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 3
+  barrel: {fileID: 762455444092973874}
+  red: {fileID: 2100000, guid: 54d1d190a5efa144091e20fbadcecec3, type: 2}
+  yellow: {fileID: 2100000, guid: 01c773f69862e2542b85127c640b3a52, type: 2}

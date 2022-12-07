@@ -17,7 +17,7 @@ public class TutorialUI : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit))
         {
-            if (hit.collider.gameObject.name == "LavaTut")
+            if (hit.collider.gameObject.name == "lavaSpawn")
             {
                 LavaUI.SetActive(true);
             }

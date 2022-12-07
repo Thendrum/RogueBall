@@ -14,7 +14,7 @@ public class RaycastShoot : MonoBehaviour
     private AudioSource gunAudio;
     private LineRenderer laserLine;
     private float nextFire;
-
+    public ParticleSystem flash;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,9 +58,11 @@ public class RaycastShoot : MonoBehaviour
     }
     private IEnumerator ShotEffect()
     {
+        flash.Play();
         gunAudio.Play();
         laserLine.enabled = true;
         yield return shotDuration;
         laserLine.enabled = false;
+        
     }
 }
