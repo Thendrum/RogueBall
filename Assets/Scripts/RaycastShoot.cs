@@ -21,6 +21,7 @@ public class RaycastShoot : MonoBehaviour
         laserLine = GetComponent<LineRenderer>();
         gunAudio = GetComponent<AudioSource>();
         fpsCam = GetComponentInParent<Camera>();
+        nextFire = Time.time;
     }
 
     // Update is called once per frame
